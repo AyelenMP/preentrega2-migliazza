@@ -52,45 +52,15 @@ body {
     mix-blend-mode: multiply;
     width: 100px;
 }
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
-
-}
-
-.menu li {
-    list-style-type: none;
-    padding: 5px;
-}
-
-.menu li a {
+.container-fluid li a {
     background-color: #e6cdc8;
-    text-decoration: none;
     color: white;
     padding: 5px;
-
-
 }
 
-.menu li a:hover {
+ li a:hover {
     color: black;
-    font-weight: bold;
-
-}
-
-.submenu {
-    display: none;
-}
-
-.menu li:hover .submenu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    position: absolute;
-    z-index: 1;
-}
+    font-weight: bold;}
 
 /*   ---   Fin de Header   ---   */
 
@@ -117,13 +87,14 @@ body {
     border-style: solid;
     border-radius: 5px;
     background-color: #e6cdc8;
-    font-weight: bolder;
-    font-size: 25px;
+    
 }
 
 .texto a {
     text-decoration: none;
     color: black;
+    font-weight: bolder;
+    font-size: 30px;
 }
 
 .seccion2 {
@@ -155,11 +126,12 @@ body {
     position: absolute;
     align-self: center;
 }
-
-.seccion3 h3 {
+.seccion3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
     font-size: 30px;
 }
-
 .seccion4 {
     grid-area: seccion4;
     display: flex;
@@ -174,11 +146,12 @@ body {
     position: absolute;
     align-self: center;
 }
-
-.seccion4 h3 {
+.seccion4 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
     font-size: 30px;
 }
-
 .seccion5 {
     grid-area: seccion5;
     justify-content: center;
@@ -445,7 +418,7 @@ textarea {
         "footer footer";
 }
 
-/*   ---   Inicio de Trabajos   ---   */
+/*   ---   Inicio de trabajos   ---   */
 
 .header {
     grid-area: header;
@@ -498,7 +471,7 @@ textarea {
     grid-area: footer;
 }
 
-/*   ---   Fin de Trabajos   ---   */
+/*   ---   Fin de trabajos   ---   */
 
 /*   ---   Grid de Contacto   ---   */
 
@@ -514,6 +487,9 @@ textarea {
         "banner banner"
         "seccion2-c seccion3-c"
         "footer footer";
+}
+.seccion3-c img {
+    width: 500px;
 }
 
 /*   ---   Inicio de Contacto   ---   */
@@ -701,19 +677,25 @@ textarea {
 
 @media screen and (max-width: 570px) {
     .container-p {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto 3fr auto;
+        grid-template-columns: 1fr
+        grid-template-rows: 1fr 1.5fr 3fr auto auto;
         grid-auto-columns: 1fr;
         grid-auto-flow: row;
         grid-template-areas:
-            "header header"
-            "banner banner"
-            "seccion2-p seccion2-p"
-            "seccion3-p seccion3-p"
-            "footer footer";
+            "header"
+            "banner"
+            "seccion2-p"
+            "seccion3-p"
+            "footer";
+    }
+    .formulario-p{
+        width: 220px;
+    }
+    
+    .seccion-2p p{
+        text-align: center;
     }
 }
-
 /*   ---   Mobile Servicios   ---   */
 
 @media screen and (max-width: 570px) {
@@ -759,14 +741,19 @@ textarea {
 /*   ---   Mobile Contacto   ---   */
 
 @media screen and (max-width: 570px) {
-    .container-c {
+    .container-contact {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto 1.5 1fr 1fr;
+        grid-template-rows: 1fr 1.5fr 1.5fr 1fr 1fr;
+        grid-auto-flow: row;
         grid-template-areas:
             "header"
             "banner"
             "seccion2-c"
             "seccion3-c"
             "footer";
+    }
+    .formulario{
+        width: 220px;
+    
     }
 }
