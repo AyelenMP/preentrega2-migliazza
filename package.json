@@ -1,0 +1,20 @@
+{
+  "name": "preentrega2-migliazza",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/estilo.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyelenMP/preentrega2-migliazza.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyelenMP/preentrega2-migliazza/issues"
+  },
+  "homepage": "https://github.com/AyelenMP/preentrega2-migliazza#readme"
+}

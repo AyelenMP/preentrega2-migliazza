@@ -1,0 +1,94 @@
+
+@font-face {
+    font-family: geosanslight;
+    src: url("/geo_sans_light/GeosansLight.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: geosanslight;
+    background-color: #e7c8c2;
+    background-image: linear-gradient(to left   #ea8614 , #d7aca5);
+    
+}
+
+/*   ---   Inicio de Header   ---   */
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/Multimedia/HEADER.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+.logo {
+    filter: brightness(1.0);
+    mix-blend-mode: multiply;
+    width: 100px;
+    }
+}
+
+/*   ---   Fin de Header   ---   */
+
+/*   ---   Inicio de footer   ---   */
+
+.footer {
+    border-top: groove 1px rgb(194, 165, 170);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Multimedia/HEADER.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contacto {
+    margin-top: 10px;
+    align-items: flex-start;
+
+    h4 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 20px 20px 10px 10px;
+}
+
+ p {
+    font-weight: 500px;
+    margin-left: 70px;
+    padding: 5px;
+}
+}
+.redes {
+    padding: 5px;
+    text-align: center;
+
+ p {
+    font-weight: 550;
+    font-size: 15px;
+}
+
+a {
+    color: #be7466;
+
+  i {
+    font-size: 30px;
+    padding: 15px 13px;
+
+    &:hover {
+    transform: scale(1.5);
+    transition: all 0, 5s ease;
+    text-decoration: none;
+}
+ }
+}
+}
+
+
+/*   ---   Fin de footer   ---   */

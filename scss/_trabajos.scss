@@ -1,0 +1,70 @@
+/*   ---   Grid de Trabajos   ---   */
+.container-t {
+    width: 100%;
+    height: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr min content 3fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header"
+        "banner banner"
+        "seccion2-t seccion2-t"
+        "seccion3-t seccion3-t"
+        "footer footer";
+}
+
+/*   ---   Inicio de trabajos   ---   */
+
+.header {
+    grid-area: header;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.seccion2-t {
+    grid-area: seccion2-t;
+}
+
+.seccion2-t ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: #E6CDC8;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.seccion3-t {
+    grid-area: seccion3-t;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin-top: 40px;
+    
+    img {
+    width: 300px;
+    padding: 30px;
+    opacity: 0.7;
+
+
+    &:hover {
+    opacity: 1;
+    transform: scale(1.5);
+    transition: all 1s ease;
+        }
+    }
+}
+.footer {
+    grid-area: footer;
+}
+
+/*   ---   Fin de trabajos   ---   */

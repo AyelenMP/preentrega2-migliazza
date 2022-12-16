@@ -1,0 +1,121 @@
+/*   ---   Grid de Contacto   ---   */
+
+.container-contact {
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1.5fr 3fr 1fr;
+    grid-template-areas:
+        "header header"
+        "banner banner"
+        "seccion2-c seccion3-c"
+        "footer footer";
+}
+.seccion3-c img {
+    width: 500px;
+}
+
+/*   ---   Inicio de Contacto   ---   */
+.header {
+    grid-area: header;
+}
+
+.banner {
+    grid-area: banner;
+}
+
+.seccion2-c {
+    grid-area: seccion2-c;
+    margin: 20px;
+
+}
+
+.seccion2-c h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 0px;
+    width: 500px;
+    height: 500px;
+    background-color: #eddbd7;
+
+
+}
+
+.formulario label {
+    width: 200px;
+    font-weight: bold;
+    display: flex;
+}
+
+.formulario input[type="text"],
+.formulario input[type="Tu nombre"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+}
+
+.formulario label option {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+}
+
+.formulario input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+}
+
+.seccion3-c {
+    grid-area: seccion3-c;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps {
+    width: 400px;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/*   ---   Fin de Contacto   ---   */
