@@ -406,7 +406,7 @@ body {
 .seccion2-s h2 {
   font-weight: 600;
   text-align: start;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-top: 20px;
   padding: 20px;
   font-size: 50px;
@@ -642,7 +642,7 @@ textarea {
     width: 220px;
   }
   .productos img {
-    width: 200px;
+    width: 20px;
     margin-left: 0px;
   }
   .productos p {
@@ -662,6 +662,9 @@ textarea {
   }
   img {
     width: 350px;
+  }
+  .seccion2-s h2 {
+    margin-left: 50px;
   }
   .seccion3-s p {
     margin: 10px;
