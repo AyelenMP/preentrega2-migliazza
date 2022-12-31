@@ -21,7 +21,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-image: url(/Multimedia/HEADER.png);
+  background-image: url(../Multimedia/HEADER.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -38,7 +38,7 @@ body {
   grid-area: footer;
   display: flex;
   flex-direction: column;
-  background-image: url(/Multimedia/HEADER.png);
+  background-image: url(../Multimedia/HEADER.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -49,7 +49,7 @@ body {
 }
 .contacto h4 {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: 800;
   margin: 20px 20px 10px 10px;
 }
 .contacto p {
@@ -63,7 +63,7 @@ body {
   text-align: center;
 }
 .redes p {
-  font-weight: 550;
+  font-weight: lighter;
   font-size: 15px;
 }
 .redes a {
@@ -154,7 +154,7 @@ body {
   border-radius: 5px;
   background-color: #e6cdc8;
 }
-.seccion1 a {
+.seccion1 .texto a {
   text-decoration: none;
   color: black;
   font-weight: bolder;
@@ -187,12 +187,21 @@ body {
 .seccion3 nav {
   position: absolute;
   align-self: center;
+  border-radius: 5px;
+  background-color: #e6cdc8;
+}
+.seccion3 nav:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
 }
 .seccion3 nav a {
   text-decoration: none;
   color: black;
   font-weight: bolder;
   font-size: 30px;
+}
+.seccion3 img {
+  width: 400px;
 }
 
 .seccion4 {
@@ -207,12 +216,21 @@ body {
 .seccion4 nav {
   position: absolute;
   align-self: center;
+  border-radius: 5px;
+  background-color: #e6cdc8;
+}
+.seccion4 nav:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
 }
 .seccion4 nav a {
   text-decoration: none;
   color: black;
   font-weight: bolder;
   font-size: 30px;
+}
+.seccion4 img {
+  width: 400px;
 }
 
 .seccion5 {
@@ -235,6 +253,10 @@ body {
   width: 400px;
   padding: 30px;
   margin: 10px;
+}
+.imgtrabajos img:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
 }
 
 .footer {
@@ -264,7 +286,8 @@ body {
   font-weight: bolder;
   text-align: start;
   padding: 5px;
-  margin-left: 50px;
+  margin-left: 60px;
+  margin-top: 40px;
 }
 
 .productos {
@@ -272,17 +295,24 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
-}
-.productos img {
-  width: 250px;
-  padding: 20px;
-  margin: 50px;
+  width: 450px;
 }
 .productos p {
-  margin-left: 50px;
+  margin-left: 55px;
   padding-bottom: 70px;
   width: 385px;
   font-size: 20px;
+}
+
+.carousel-inner img {
+  width: 450px;
+  height: 500px;
+  padding: 20px;
+  margin: 50px;
+}
+
+.carousel-control-prev {
+  margin-left: 18%;
 }
 
 .seccion3-p {
@@ -374,8 +404,10 @@ body {
   grid-area: seccion2-s;
 }
 .seccion2-s h2 {
-  text-align: left;
-  margin: 20px;
+  font-weight: 600;
+  text-align: start;
+  margin-left: 100px;
+  margin-top: 20px;
   padding: 20px;
   font-size: 50px;
 }

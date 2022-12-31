@@ -41,13 +41,12 @@
     border-radius: 5px;
     background-color: #e6cdc8;
     
-}
-
-     a {
+    a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
     font-size: 30px;
+}
 }
 }
 
@@ -78,13 +77,24 @@
  nav {
     position: absolute;
     align-self: center;
+    border-radius: 5px;
+    background-color: #e6cdc8;
 
+    &:hover {
+        transform: scale(1.2);
+        transition: all 1s ease;
+        } 
  a{
     text-decoration: none;
     color: black;
     font-weight: bolder;
     font-size: 30px;
+
  }
+}
+ 
+ img{
+    width: 400px;
 }
 }
 .seccion4 {
@@ -99,6 +109,13 @@
  nav {
     position: absolute;
     align-self: center;
+    border-radius: 5px;
+    background-color: #e6cdc8;
+
+    &:hover {
+        transform: scale(1.2);
+        transition: all 1s ease;
+        } 
 
  a{
     text-decoration: none;
@@ -107,6 +124,10 @@
     font-size: 30px;
 }
  }
+ img{
+    width: 400px;
+
+}
 }
 .seccion5 {
     grid-area: seccion5;
@@ -129,6 +150,10 @@
     width: 400px;
     padding: 30px;
     margin: 10px;
+    &:hover {
+        transform: scale(1.2);
+        transition: all 1s ease;
+        } 
 
 }
 }
